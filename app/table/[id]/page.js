@@ -10,8 +10,8 @@ export default function TablePage({ params }) {
 
   const [menu, setMenu] = useState([]);
   const [cart, setCart] = useState([]);
+  const [activeCategory, setActiveCategory] = useState("SVE");
 
-  // 📦 LOAD MENU
   useEffect(() => {
     const unsub = onSnapshot(collection(db, "menu"), (snap) => {
       setMenu(snap.docs.map(d => ({ id: d.id, ...d.data() })));
@@ -20,60 +20,51 @@ export default function TablePage({ params }) {
     return () => unsub();
   }, []);
 
-  // ➕ ADD ITEM
-  function add(item) {
+  const categories = [
+    "SVE",
+    ...new Set(menu.map(i => i.category).filter(Boolean))
+  ];
 
+  const filteredMenu =
+    activeCategory === "SVE"
+      ? menu
+      : menu.filter(i => i.category === activeCategory);
+
+  function add(item) {
     const exists = cart.find(i => i.id === item.id);
 
     if (exists) {
-      setCart(
-        cart.map(i =>
-          i.id === item.id
-            ? { ...i, quantity: i.quantity + 1 }
-            : i
-        )
-      );
+      setCart(cart.map(i =>
+        i.id === item.id
+          ? { ...i, quantity: i.quantity + 1 }
+          : i
+      ));
     } else {
-      setCart([
-        ...cart,
-        {
-          id: item.id,
-          name: item.name,
-          price: item.price,
-          quantity: 1
-        }
-      ]);
+      setCart([...cart, { ...item, quantity: 1 }]);
     }
   }
 
-  // ➖ REMOVE ITEM
-  function remove(itemId) {
-
-    const item = cart.find(i => i.id === itemId);
+  function remove(id) {
+    const item = cart.find(i => i.id === id);
     if (!item) return;
 
     if (item.quantity > 1) {
-      setCart(
-        cart.map(i =>
-          i.id === itemId
-            ? { ...i, quantity: i.quantity - 1 }
-            : i
-        )
-      );
+      setCart(cart.map(i =>
+        i.id === id
+          ? { ...i, quantity: i.quantity - 1 }
+          : i
+      ));
     } else {
-      setCart(cart.filter(i => i.id !== itemId));
+      setCart(cart.filter(i => i.id !== id));
     }
   }
 
-  // 💰 TOTAL
   const total = cart.reduce(
     (sum, i) => sum + i.price * i.quantity,
     0
   );
 
-  // 📤 SEND ORDER
   async function sendOrder() {
-
     if (cart.length === 0) return;
 
     await addDoc(collection(db, "orders"), {
@@ -89,38 +80,79 @@ export default function TablePage({ params }) {
   }
 
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-zinc-900 to-black text-white p-4">
+    <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-black via-zinc-950 to-black text-white p-4">
 
-      {/* CARD */}
-      <div className="w-[420px] bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl shadow-2xl p-6 animate-fadeIn">
+      {/* MAIN CARD */}
+      <div className="w-[440px] bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl shadow-2xl p-6">
 
         {/* HEADER */}
-        <h1 className="text-2xl font-bold text-center mb-6">
-          🍻 Sto {tableId}
+        <div className="flex items-center justify-center gap-3 mb-6">
+
+          <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center border border-white/10">
+            <img src="/logo.png" className="w-6 h-6" />
+          </div>
+
+          <span className="font-bold text-xl tracking-widest">
+            Secret Party
+          </span>
+
+        </div>
+
+        {/* TABLE */}
+        <h1 className="text-center text-gray-400 mb-5">
+          Sto <span className="text-white font-bold">{tableId}</span>
         </h1>
 
-        {/* MENU */}
-        <div className="space-y-3">
+        {/* CATEGORY BAR */}
+        <div className="flex gap-2 overflow-x-auto mb-5 pb-2">
 
-          {menu.map(item => (
+          {categories.map(cat => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              className={`px-4 py-1 rounded-full text-sm whitespace-nowrap transition-all duration-200 active:scale-95
+                ${
+                  activeCategory === cat
+                    ? "bg-purple-600 text-white shadow-lg"
+                    : "bg-white/10 text-gray-300 hover:bg-white/20"
+                }`}
+            >
+              {cat}
+            </button>
+          ))}
+
+        </div>
+
+        {/* MENU */}
+        <div className="space-y-3 max-h-[380px] overflow-y-auto pr-1">
+
+          {filteredMenu.map(item => (
             <div
               key={item.id}
-              className="flex justify-between items-center p-3 rounded-xl bg-white/5 hover:bg-white/10 transition-all duration-300 hover:scale-[1.02]"
+              className="flex justify-between items-center p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-all duration-200 hover:scale-[1.01]"
             >
 
               <div>
                 <div className="font-semibold">{item.name}</div>
-                <div className="text-gray-400 text-sm">
-                  {item.price} din
+                <div className="text-gray-500 text-xs">
+                  {item.category}
                 </div>
               </div>
 
-              <button
-                onClick={() => add(item)}
-                className="bg-green-500 hover:bg-green-400 active:scale-95 transition px-3 py-1 rounded-lg text-black font-bold"
-              >
-                +
-              </button>
+              <div className="flex items-center gap-3">
+
+                <span className="text-yellow-400 font-semibold">
+                  {item.price} din
+                </span>
+
+                <button
+                  onClick={() => add(item)}
+                  className="w-9 h-9 flex items-center justify-center rounded-xl bg-green-500 text-black font-bold hover:bg-green-400 active:scale-90 transition"
+                >
+                  +
+                </button>
+
+              </div>
 
             </div>
           ))}
@@ -128,9 +160,7 @@ export default function TablePage({ params }) {
         </div>
 
         {/* CART */}
-        <hr className="my-5 border-white/10" />
-
-        <div className="space-y-3">
+        <div className="mt-6 border-t border-white/10 pt-4 space-y-3">
 
           {cart.length === 0 && (
             <p className="text-center text-gray-400">
@@ -141,16 +171,11 @@ export default function TablePage({ params }) {
           {cart.map(item => (
             <div
               key={item.id}
-              className="flex justify-between items-center bg-white/5 p-3 rounded-xl hover:bg-white/10 transition"
+              className="flex justify-between items-center bg-white/5 p-3 rounded-xl border border-white/5"
             >
 
-              <div>
-                <div className="font-medium">
-                  {item.name} × {item.quantity}
-                </div>
-                <div className="text-xs text-gray-400">
-                  {item.price} din / kom
-                </div>
+              <div className="text-sm">
+                {item.name} × {item.quantity}
               </div>
 
               <div className="flex items-center gap-2">
@@ -161,7 +186,7 @@ export default function TablePage({ params }) {
 
                 <button
                   onClick={() => remove(item.id)}
-                  className="bg-red-500 hover:bg-red-400 active:scale-95 transition px-2 py-1 rounded-lg text-xs"
+                  className="w-7 h-7 flex items-center justify-center rounded-lg bg-red-500 text-xs hover:bg-red-400 transition"
                 >
                   ❌
                 </button>
@@ -174,14 +199,14 @@ export default function TablePage({ params }) {
         </div>
 
         {/* TOTAL */}
-        <div className="mt-6 text-center text-yellow-400 font-bold text-lg animate-pulse">
+        <div className="mt-6 text-center text-yellow-400 font-bold text-lg">
           Ukupno: {total} din
         </div>
 
-        {/* BUTTON */}
+        {/* ORDER BUTTON */}
         <button
           onClick={sendOrder}
-          className="mt-5 w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition py-3 rounded-xl font-bold shadow-xl active:scale-95"
+          className="mt-4 w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 transition py-3 rounded-2xl font-bold shadow-xl active:scale-95"
         >
           🚀 Naruči
         </button>

@@ -1,29 +1,61 @@
 "use client";
-import Link from "next/link";
-import { signOut } from "firebase/auth";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "../../lib/firebase";
+import { auth } from "@/lib/firebase";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import { db } from "../../lib/firebase";
 import {
   collection,
   onSnapshot,
-  deleteDoc,
   doc,
   updateDoc,
-  addDoc
+  deleteDoc
 } from "firebase/firestore";
-
-import { useEffect, useState, useRef } from "react";
-import { db } from "../../lib/firebase";
 
 export default function Admin() {
 
   const [orders, setOrders] = useState([]);
-  const [menu, setMenu] = useState([]);
-  const [name, setName] = useState("");
-  const [price, setPrice] = useState("");
-  const audioRef = useRef(null);
-  const router = useRouter();
+  const [filter, setFilter] = useState("SVE");
+
+  // 🔥 REALTIME ORDERS
+  useEffect(() => {
+    const unsub = onSnapshot(collection(db, "orders"), (snap) => {
+      setOrders(
+        snap.docs.map(d => ({
+          id: d.id,
+          ...d.data()
+        }))
+      );
+    });
+
+    return () => unsub();
+  }, []);
+
+  // 🍽️ MARK AS SERVED (UPDATE + DELETE)
+  const served = async (order) => {
+
+    // 1. update status (for tables sync)
+    await updateDoc(doc(db, "orders", order.id), {
+      status: "Servirano"
+    });
+
+    // 2. delete after short delay (smooth sync)
+    setTimeout(async () => {
+      await updateDoc(doc(db, "orders", order.id), {
+  status: "Servirano",
+  finishedAt: Date.now()
+});
+    }, 500);
+  };
+
+  const setStatus = async (id, status) => {
+    await updateDoc(doc(db, "orders", id), { status });
+  };
+
+  const filtered = orders.filter(o =>
+    filter === "SVE" ? true : o.status === filter
+  );
+const router = useRouter();
 
 useEffect(() => {
   const unsub = onAuthStateChanged(auth, (user) => {
@@ -34,221 +66,122 @@ useEffect(() => {
 
   return () => unsub();
 }, []);
-
-  // 🔥 REALTIME ORDERS + MENU
-  useEffect(() => {
-
-    const unsubOrders = onSnapshot(collection(db, "orders"), (snapshot) => {
-
-      const data = snapshot.docs.map(d => ({
-        id: d.id,
-        ...d.data()
-      }));
-
-      setOrders(data);
-
-      // 🔔 sound samo za nove
-      const hasNew = snapshot.docChanges().some(
-        change => change.type === "added"
-      );
-
-      if (hasNew) {
-        audioRef.current?.play();
-      }
-
-    });
-
-    const unsubMenu = onSnapshot(collection(db, "menu"), (snapshot) => {
-      setMenu(snapshot.docs.map(d => ({
-        id: d.id,
-        ...d.data()
-      })));
-    });
-
-    return () => {
-      unsubOrders();
-      unsubMenu();
-    };
-
-  }, []);
-
-  // ➕ DODAJ PIĆE
-  async function addDrink() {
-    if (!name || !price) return;
-
-    await addDoc(collection(db, "menu"), {
-      name,
-      price: Number(price)
-    });
-
-    setName("");
-    setPrice("");
-  }
-
-  // 📊 SORTIRANJE ORDERS
-  const sortedOrders = [...orders].sort((a, b) => b.time - a.time);
-
   return (
-    <main className="min-h-screen bg-black text-white p-4 md:p-10">
+    <main className="min-h-screen bg-black text-white p-6">
 
-      <audio ref={audioRef} src="/notification.wav" />
-    <Link href="/admin/analytics">
-  <button className="bg-purple-600 px-3 py-1 rounded mb-4">
-    📊 Analytics
-  </button>
-</Link>
-<button
-  onClick={() => signOut(auth)}
-  className="bg-red-600 px-3 py-1 rounded mb-4"
->
-  Logout
-</button>
       {/* HEADER */}
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold">🍻 Admin POS</h1>
-        <span className="text-green-400 text-sm">LIVE</span>
-      </div>
 
-      {/* ZARADA */}
-      <div className="bg-zinc-800 p-4 rounded mb-6">
-        <h2 className="font-bold">💰 Ukupna zarada</h2>
-        <p className="text-yellow-400 text-2xl font-bold">
-          {orders.reduce((sum, o) => sum + (o.total || 0), 0)} din
-        </p>
-      </div>
+        <h1 className="text-2xl font-bold">
+          👨‍🍳 Admin Panel
+        </h1>
 
-      {/* DODAJ PIĆE */}
-      <div className="bg-zinc-800 p-4 rounded mb-6">
+        {/* FILTER */}
+        <div className="flex gap-2">
 
-        <h2 className="font-bold mb-2">➕ Dodaj piće</h2>
-
-        <input
-          className="text-black p-2 mr-2"
-          placeholder="Ime"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        />
-
-        <input
-          className="text-black p-2 mr-2"
-          placeholder="Cena"
-          type="number"
-          value={price}
-          onChange={(e) => setPrice(e.target.value)}
-        />
-
-        <button
-          onClick={addDrink}
-          className="bg-green-600 px-3 py-2 rounded"
-        >
-          Dodaj
-        </button>
-
-      </div>
-
-      {/* MENI */}
-      <div className="bg-zinc-800 p-4 rounded mb-6">
-
-        <h2 className="font-bold mb-2">🍺 Meni</h2>
-
-        {menu.map(item => (
-          <div key={item.id} className="flex justify-between mb-2">
-
-            <span>{item.name} - {item.price} din</span>
-
+          {["SVE", "Čeka", "U pripremi"].map(f => (
             <button
-              onClick={() => deleteDoc(doc(db, "menu", item.id))}
-              className="bg-red-600 px-2 py-1 rounded"
+              key={f}
+              onClick={() => setFilter(f)}
+              className={`px-3 py-1 rounded-full text-sm transition
+                ${filter === f
+                  ? "bg-purple-600"
+                  : "bg-zinc-800"
+                }`}
             >
-              Obriši
+              {f}
             </button>
+          ))}
 
-          </div>
-        ))}
+        </div>
 
       </div>
 
       {/* ORDERS */}
-      <div className="space-y-4">
+      <div className="grid gap-4">
 
-        {sortedOrders.map(order => (
+        {filtered.map(order => (
+          <div
+            key={order.id}
+            className="bg-zinc-900 border border-white/10 rounded-xl p-4"
+          >
 
-          <div key={order.id} className="bg-zinc-800 p-4 rounded">
+            {/* HEADER */}
+            <div className="flex justify-between mb-2">
 
-            <h2 className="text-xl font-bold">
-              Sto {order.table}
-            </h2>
+              <div>
+                <div className="text-sm text-gray-400">
+                  Sto {order.table}
+                </div>
 
-            <p className={`font-bold ${
-              order.status === "Čeka"
-                ? "text-yellow-400"
-                : order.status === "U pripremi"
-                ? "text-blue-400"
-                : "text-green-400"
-            }`}>
-              {order.status || "Čeka"}
-            </p>
+                <div className="text-xs text-gray-500">
+                  #{order.id.slice(0, 6)}
+                </div>
+              </div>
 
-            <span className="text-xs text-gray-400">
-              #{order.id.slice(0, 6)}
-            </span>
+              <span className={
+                order.status === "Čeka"
+                  ? "text-yellow-400"
+                  : order.status === "U pripremi"
+                  ? "text-blue-400"
+                  : "text-green-400"
+              }>
+                {order.status}
+              </span>
 
-            <p className="text-gray-400 text-sm mb-2">
-              {order.time
-                ? new Date(order.time).toLocaleTimeString()
-                : ""}
-            </p>
+            </div>
 
             {/* ITEMS */}
-            {order.items?.map(item => (
-              <div key={item.id} className="flex justify-between">
-                <span>{item.name} × {item.quantity}</span>
-                <span>{item.price * item.quantity} din</span>
-              </div>
-            ))}
+            <div className="space-y-1 text-sm mb-3">
 
-            <p className="mt-2 font-bold text-yellow-400">
-              Ukupno: {order.total} din
-            </p>
+              {order.items?.map((i, idx) => (
+                <div key={idx} className="flex justify-between">
+                  <span>{i.name} × {i.quantity}</span>
+                  <span className="text-yellow-400">
+                    {i.price * i.quantity} din
+                  </span>
+                </div>
+              ))}
+
+            </div>
+
+            {/* TOTAL */}
+            <div className="border-t border-white/10 pt-2 flex justify-between font-bold">
+
+              <span>Ukupno</span>
+              <span className="text-yellow-400">
+                {order.total} din
+              </span>
+
+            </div>
 
             {/* ACTIONS */}
             <div className="flex gap-2 mt-3">
 
               <button
-                onClick={() =>
-                  updateDoc(doc(db, "orders", order.id), {
-                    status: "U pripremi"
-                  })
-                }
-                className="bg-blue-600 px-3 py-1 rounded text-sm"
+                onClick={() => setStatus(order.id, "Čeka")}
+                className="bg-yellow-500 text-black px-3 py-1 rounded"
+              >
+                Čeka
+              </button>
+
+              <button
+                onClick={() => setStatus(order.id, "U pripremi")}
+                className="bg-blue-600 px-3 py-1 rounded"
               >
                 U pripremi
               </button>
 
               <button
-                onClick={() =>
-                  updateDoc(doc(db, "orders", order.id), {
-                    status: "Posluženo"
-                  })
-                }
-                className="bg-green-600 px-3 py-1 rounded text-sm"
+                onClick={() => served(order)}
+                className="bg-green-500 text-black px-3 py-1 rounded"
               >
                 Posluženo
-              </button>
-
-              <button
-                onClick={() =>
-                  deleteDoc(doc(db, "orders", order.id))
-                }
-                className="bg-red-600 px-3 py-1 rounded text-sm"
-              >
-                Obriši
               </button>
 
             </div>
 
           </div>
-
         ))}
 
       </div>
