@@ -1,52 +1,92 @@
 "use client";
+
+import { useEffect, useRef, useState } from "react";
+import { auth, db } from "@/lib/firebase";
 import { onAuthStateChanged } from "firebase/auth";
-import { auth } from "@/lib/firebase";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
-import { db } from "../../lib/firebase";
 import {
   collection,
   onSnapshot,
   doc,
-  updateDoc,
-  deleteDoc
+  updateDoc
 } from "firebase/firestore";
 
-export default function Admin() {
+export default function ClubAdmin() {
 
   const [orders, setOrders] = useState([]);
   const [filter, setFilter] = useState("SVE");
+  const [newIds, setNewIds] = useState([]);
 
-  // 🔥 REALTIME ORDERS
+  const prevRef = useRef([]);
+  const audioRef = useRef(null);
+
+  const router = useRouter();
+
+  // 🔐 AUTH
+  useEffect(() => {
+    const unsub = onAuthStateChanged(auth, (user) => {
+      if (!user) router.push("/login");
+    });
+    return () => unsub();
+  }, [router]);
+
+  // 🔊 UNLOCK AUDIO
+  useEffect(() => {
+    const unlock = () => {
+      if (!audioRef.current) {
+        audioRef.current = new Audio("/notification.wav");
+        audioRef.current.volume = 1;
+      }
+
+      audioRef.current.play().catch(() => {});
+      audioRef.current.pause();
+
+      window.removeEventListener("click", unlock);
+    };
+
+    window.addEventListener("click", unlock);
+    return () => window.removeEventListener("click", unlock);
+  }, []);
+
+  // 🔥 LIVE ORDERS ENGINE
   useEffect(() => {
     const unsub = onSnapshot(collection(db, "orders"), (snap) => {
-      setOrders(
-        snap.docs.map(d => ({
-          id: d.id,
-          ...d.data()
-        }))
+
+      const data = snap.docs.map(d => ({
+        id: d.id,
+        ...d.data()
+      }));
+
+      const prev = prevRef.current;
+
+      const newOnes = data.filter(
+        o => !prev.some(p => p.id === o.id)
       );
+
+      if (newOnes.length > 0) {
+
+        // 🔊 SOUND
+        if (audioRef.current) {
+          audioRef.current.currentTime = 0;
+          audioRef.current.play().catch(() => {});
+        }
+
+        // 📳 VIBRATION
+        if (navigator.vibrate) {
+          navigator.vibrate([200, 100, 200]);
+        }
+
+        setNewIds(newOnes.map(o => o.id));
+
+        setTimeout(() => setNewIds([]), 4000);
+      }
+
+      prevRef.current = data;
+      setOrders(data);
     });
 
     return () => unsub();
   }, []);
-
-  // 🍽️ MARK AS SERVED (UPDATE + DELETE)
-  const served = async (order) => {
-
-    // 1. update status (for tables sync)
-    await updateDoc(doc(db, "orders", order.id), {
-      status: "Servirano"
-    });
-
-    // 2. delete after short delay (smooth sync)
-    setTimeout(async () => {
-      await updateDoc(doc(db, "orders", order.id), {
-  status: "Servirano",
-  finishedAt: Date.now()
-});
-    }, 500);
-  };
 
   const setStatus = async (id, status) => {
     await updateDoc(doc(db, "orders", id), { status });
@@ -55,38 +95,27 @@ export default function Admin() {
   const filtered = orders.filter(o =>
     filter === "SVE" ? true : o.status === filter
   );
-const router = useRouter();
 
-useEffect(() => {
-  const unsub = onAuthStateChanged(auth, (user) => {
-    if (!user) {
-      router.push("/login");
-    }
-  });
-
-  return () => unsub();
-}, []);
   return (
-    <main className="min-h-screen bg-black text-white p-6">
+    <main className="min-h-screen bg-black text-white">
 
-      {/* HEADER */}
-      <div className="flex justify-between items-center mb-6">
+      {/* TOP BAR */}
+      <div className="sticky top-0 z-50 bg-black/80 backdrop-blur border-b border-white/10 p-3 flex justify-between items-center">
 
-        <h1 className="text-2xl font-bold">
-          👨‍🍳 Admin Panel
+        <h1 className="text-xl font-bold tracking-widest text-red-500">
+          🔥 CLUB CONTROL
         </h1>
 
-        {/* FILTER */}
         <div className="flex gap-2">
 
-          {["SVE", "Čeka", "U pripremi"].map(f => (
+          {["SVE", "Čeka", "U pripremi", "Servirano"].map(f => (
             <button
               key={f}
               onClick={() => setFilter(f)}
-              className={`px-3 py-1 rounded-full text-sm transition
+              className={`px-3 py-1 rounded text-xs transition
                 ${filter === f
-                  ? "bg-purple-600"
-                  : "bg-zinc-800"
+                  ? "bg-red-600 text-white"
+                  : "bg-zinc-800 text-gray-300"
                 }`}
             >
               {f}
@@ -97,92 +126,102 @@ useEffect(() => {
 
       </div>
 
-      {/* ORDERS */}
-      <div className="grid gap-4">
+      {/* GRID */}
+      <div className="grid gap-3 p-3">
 
-        {filtered.map(order => (
-          <div
-            key={order.id}
-            className="bg-zinc-900 border border-white/10 rounded-xl p-4"
-          >
+        {filtered.map(order => {
 
-            {/* HEADER */}
-            <div className="flex justify-between mb-2">
+          const isNew = newIds.includes(order.id);
 
-              <div>
-                <div className="text-sm text-gray-400">
-                  Sto {order.table}
+          return (
+            <div
+              key={order.id}
+              className={`
+                rounded-xl p-4 border transition-all
+
+                ${isNew
+                  ? "border-red-500 shadow-lg shadow-red-500/40 animate-pulse scale-[1.01]"
+                  : "border-white/10 bg-zinc-900"
+                }
+              `}
+            >
+
+              {/* HEADER */}
+              <div className="flex justify-between items-center mb-2">
+
+                <div>
+                  <div className="text-sm text-gray-400">
+                    🪑 Sto {order.table}
+                  </div>
+                  <div className="text-[10px] text-gray-500">
+                    #{order.id.slice(0, 6)}
+                  </div>
                 </div>
 
-                <div className="text-xs text-gray-500">
-                  #{order.id.slice(0, 6)}
+                <div className={`
+                  text-xs font-bold px-2 py-1 rounded
+                  ${order.status === "Čeka" && "bg-yellow-500 text-black"}
+                  ${order.status === "U pripremi" && "bg-blue-500 text-white"}
+                  ${order.status === "Servirano" && "bg-green-500 text-black"}
+                `}>
+                  {order.status}
                 </div>
+
               </div>
 
-              <span className={
-                order.status === "Čeka"
-                  ? "text-yellow-400"
-                  : order.status === "U pripremi"
-                  ? "text-blue-400"
-                  : "text-green-400"
-              }>
-                {order.status}
-              </span>
+              {/* ITEMS */}
+              <div className="space-y-1 text-sm mb-3">
+
+                {order.items?.map((i, idx) => (
+                  <div key={idx} className="flex justify-between">
+                    <span>{i.name} × {i.quantity}</span>
+                    <span className="text-yellow-400">
+                      {i.price * i.quantity} din
+                    </span>
+                  </div>
+                ))}
+
+              </div>
+
+              {/* TOTAL */}
+              <div className="border-t border-white/10 pt-2 flex justify-between font-bold">
+
+                <span>Total</span>
+                <span className="text-yellow-400">
+                  {order.total} din
+                </span>
+
+              </div>
+
+              {/* ACTIONS */}
+              <div className="flex gap-2 mt-3">
+
+                <button
+                  onClick={() => setStatus(order.id, "Čeka")}
+                  className="bg-yellow-500 text-black px-3 py-1 rounded text-xs"
+                >
+                  Čeka
+                </button>
+
+                <button
+                  onClick={() => setStatus(order.id, "U pripremi")}
+                  className="bg-blue-600 px-3 py-1 rounded text-xs"
+                >
+                  Priprema
+                </button>
+
+                <button
+                  onClick={() => setStatus(order.id, "Servirano")}
+                  className="bg-green-500 text-black px-3 py-1 rounded text-xs"
+                >
+                  OK
+                </button>
+
+              </div>
 
             </div>
-
-            {/* ITEMS */}
-            <div className="space-y-1 text-sm mb-3">
-
-              {order.items?.map((i, idx) => (
-                <div key={idx} className="flex justify-between">
-                  <span>{i.name} × {i.quantity}</span>
-                  <span className="text-yellow-400">
-                    {i.price * i.quantity} din
-                  </span>
-                </div>
-              ))}
-
-            </div>
-
-            {/* TOTAL */}
-            <div className="border-t border-white/10 pt-2 flex justify-between font-bold">
-
-              <span>Ukupno</span>
-              <span className="text-yellow-400">
-                {order.total} din
-              </span>
-
-            </div>
-
-            {/* ACTIONS */}
-            <div className="flex gap-2 mt-3">
-
-              <button
-                onClick={() => setStatus(order.id, "Čeka")}
-                className="bg-yellow-500 text-black px-3 py-1 rounded"
-              >
-                Čeka
-              </button>
-
-              <button
-                onClick={() => setStatus(order.id, "U pripremi")}
-                className="bg-blue-600 px-3 py-1 rounded"
-              >
-                U pripremi
-              </button>
-
-              <button
-                onClick={() => served(order)}
-                className="bg-green-500 text-black px-3 py-1 rounded"
-              >
-                Posluženo
-              </button>
-
-            </div>
-
-          </div>
-        ))}
+          );
+        })}
 
       </div>
 
