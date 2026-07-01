@@ -166,7 +166,7 @@ setTimeout(() => {
               />
 
               <h1 className="text-3xl font-bold">
-                Welcome to <span className="text-purple-400">Secret Party</span>
+                Dobrodosli na <span className="text-purple-400">Secret Party</span>
               </h1>
 
               <p className="text-gray-400 mt-2">
