@@ -8,7 +8,9 @@ import {
   collection,
   onSnapshot,
   doc,
-  updateDoc
+  updateDoc,
+  increment,
+  deleteDoc
 } from "firebase/firestore";
 
 export default function ClubAdmin() {
@@ -21,7 +23,28 @@ export default function ClubAdmin() {
   const audioRef = useRef(null);
 
   const router = useRouter();
+const obrisiServirane = async () => {
 
+  const servirane = orders.filter(
+    order => order.status === "Servirano"
+  );
+
+
+  for (const order of servirane) {
+
+    await deleteDoc(
+      doc(db, "orders", order.id)
+    );
+
+  }
+
+
+  console.log(
+    "Obrisano serviranih porudzbina:",
+    servirane.length
+  );
+
+};
   // 🔐 AUTH
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (user) => {
@@ -88,9 +111,61 @@ export default function ClubAdmin() {
     return () => unsub();
   }, []);
 
-  const setStatus = async (id, status) => {
-    await updateDoc(doc(db, "orders", id), { status });
-  };
+const setStatus = async (id,status)=>{
+
+
+const order =
+orders.find(o=>o.id===id);
+
+
+
+await updateDoc(
+
+doc(db,"orders",id),
+
+{
+status
+}
+
+);
+
+
+
+console.log("PORUDZBINA:", order);
+console.log("ITEMI:", order.items);
+if(status==="Servirano"){
+
+
+for(const item of order.items){
+
+
+await updateDoc(
+
+doc(
+db,
+"inventory",
+item.id
+),
+
+{
+
+quantity:
+increment(
+-item.quantity
+)
+
+}
+
+);
+
+
+}
+
+
+}
+
+
+};
 
   const filtered = orders.filter(o =>
     filter === "SVE" ? true : o.status === filter
@@ -107,7 +182,12 @@ export default function ClubAdmin() {
         </h1>
 
         <div className="flex gap-2">
-
+<button
+  onClick={obrisiServirane}
+  className="bg-red-600 px-3 py-1 rounded text-xs font-bold"
+>
+  🗑️ Obriši poslužene
+</button>
           {["SVE", "Čeka", "U pripremi", "Servirano"].map(f => (
             <button
               key={f}

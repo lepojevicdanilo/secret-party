@@ -212,3 +212,42 @@ body {
 .cameraIntro {
   animation: cameraIntro 1.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
+@keyframes float{
+
+0%{
+transform:translateY(0px) translateX(0px);
+}
+
+50%{
+transform:translateY(-30px) translateX(20px);
+}
+
+100%{
+transform:translateY(0px) translateX(0px);
+}
+
+}
+
+@keyframes float2{
+
+0%{
+transform:translateY(0px) translateX(0px);
+}
+
+50%{
+transform:translateY(30px) translateX(-20px);
+}
+
+100%{
+transform:translateY(0px) translateX(0px);
+}
+
+}
+
+.animate-float{
+animation:float 8s ease-in-out infinite;
+}
+
+.animate-float2{
+animation:float2 10s ease-in-out infinite;
+}
