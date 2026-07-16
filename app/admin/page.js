@@ -183,15 +183,25 @@ export default function ClubAdmin() {
 
               </div>
 
-              {/* TOTAL */}
-              <div className="border-t border-white/10 pt-2 flex justify-between font-bold">
+{/* TOTAL */}
+<div className="border-t border-white/10 pt-2 flex justify-between font-bold">
 
-                <span>Total</span>
-                <span className="text-yellow-400">
-                  {order.total} din
-                </span>
+  <span>Total</span>
 
-              </div>
+  <span className="text-yellow-400">
+
+    {
+      order.total ??
+      order.items?.reduce(
+        (sum,item)=>
+          sum + (item.price * item.quantity),
+        0
+      )
+    } din
+
+  </span>
+
+</div>
 
               {/* ACTIONS */}
               <div className="flex gap-2 mt-3">
