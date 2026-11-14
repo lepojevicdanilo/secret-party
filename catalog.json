@@ -1,0 +1,1603 @@
+{
+  "updated": "2026-11-14T15:40:43.835Z",
+  "count": 124,
+  "products": [
+    {
+      "id": "001-392-titan-prestige-14-mm-33-ac5",
+      "title": "392 Titan Prestige – 14 mm, 33/AC5",
+      "current": "2.519,28 RSD",
+      "old": "3.499,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/001-392-titan-prestige-14-mm-33-ac5.jpg",
+      "categories": [
+        "kolekcija",
+        "titan-prestige-laminat-14-mm"
+      ]
+    },
+    {
+      "id": "002-405-solar-oak-10-mm-33-ac5",
+      "title": "405 Solar Oak – 10 mm, 33/AC5",
+      "current": "1.699,32 RSD",
+      "old": "2.499,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/002-405-solar-oak-10-mm-33-ac5.jpg",
+      "categories": [
+        "kolekcija",
+        "supreme-vario-laminat-10-mm"
+      ]
+    },
+    {
+      "id": "003-483-crossebow-12-mm-33-ac6",
+      "title": "483 Crossebow – 12 mm, 33/AC6",
+      "current": "1.979,34 RSD",
+      "old": "2.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/003-483-crossebow-12-mm-33-ac6.jpg",
+      "categories": [
+        "empire-laminat-12-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "004-5341-roseberg-oak-10-mm-32-ac4",
+      "title": "5341 Roseberg Oak – 10 mm, 32/AC4",
+      "current": "1.699,32 RSD",
+      "old": "2.499,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/004-5341-roseberg-oak-10-mm-32-ac4.jpg",
+      "categories": [
+        "kolekcija",
+        "sublime-vario-laminat-10-mm"
+      ]
+    },
+    {
+      "id": "005-5947-titan-prestige-14-mm-33-ac5",
+      "title": "5947 Titan Prestige – 14 mm, 33/AC5",
+      "current": "2.519,28 RSD",
+      "old": "3.499,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/005-5947-titan-prestige-14-mm-33-ac5.jpg",
+      "categories": [
+        "kolekcija",
+        "titan-prestige-laminat-14-mm"
+      ]
+    },
+    {
+      "id": "006-5953-titan-prestige-14-mm-33-ac5",
+      "title": "5953 Titan Prestige – 14 mm, 33/AC5",
+      "current": "2.519,28 RSD",
+      "old": "3.499,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/006-5953-titan-prestige-14-mm-33-ac5.jpg",
+      "categories": [
+        "kolekcija",
+        "titan-prestige-laminat-14-mm"
+      ]
+    },
+    {
+      "id": "007-8169-polish-oak-10-mm-33-ac5",
+      "title": "8169 Polish Oak – 10 mm, 33/AC5",
+      "current": "1.699,32 RSD",
+      "old": "2.499,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/007-8169-polish-oak-10-mm-33-ac5.jpg",
+      "categories": [
+        "kolekcija",
+        "supreme-vario-laminat-10-mm"
+      ]
+    },
+    {
+      "id": "008-8199-alpine-oak-10-mm-32-ac4",
+      "title": "8199 Alpine Oak – 10 mm, 32/AC4",
+      "current": "1.449,42 RSD",
+      "old": "2.499,00 RSD",
+      "type": "kolekcija",
+      "tone": "light",
+      "image": "assets/catalog/008-8199-alpine-oak-10-mm-32-ac4.jpg",
+      "categories": [
+        "kolekcija",
+        "sublime-vario-laminat-10-mm"
+      ]
+    },
+    {
+      "id": "009-8274-dab-morton-8-mm-32-ac4",
+      "title": "8274 Dab Morton – 8 mm, 32/AC4",
+      "current": "1.359,32 RSD",
+      "old": "1.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/009-8274-dab-morton-8-mm-32-ac4.jpg",
+      "categories": [
+        "evergreen-laminat-8-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "010-8573-titan-prestige-14-mm-33-ac5",
+      "title": "8573 Titan Prestige – 14 mm, 33/AC5",
+      "current": "2.519,28 RSD",
+      "old": "3.499,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/010-8573-titan-prestige-14-mm-33-ac5.jpg",
+      "categories": [
+        "kolekcija",
+        "titan-prestige-laminat-14-mm"
+      ]
+    },
+    {
+      "id": "011-8837-new-england-oak-8-mm-32-ac4",
+      "title": "8837 New England Oak – 8 mm, 32/AC4",
+      "current": "1.359,32 RSD",
+      "old": "1.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/011-8837-new-england-oak-8-mm-32-ac4.jpg",
+      "categories": [
+        "evergreen-laminat-8-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "012-optimax-boulder-pointe-hybrid-resilient",
+      "title": "OptiMax Boulder Pointe Hybrid Resilient",
+      "current": "1.199,40 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/012-optimax-boulder-pointe-hybrid-resilient.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "013-akcijski-laminat-120-soft-shade-8-mm-32-ac4",
+      "title": "Akcijski laminat 120 Soft Shade – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/013-akcijski-laminat-120-soft-shade-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "014-akcijski-laminat-1343-8-mm-32-ac4",
+      "title": "Akcijski laminat 1343 – 8 mm, 32/AC4",
+      "current": "799,60 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/014-akcijski-laminat-1343-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "015-akcijski-laminat-1517-8-mm-32-ac4",
+      "title": "Akcijski laminat 1517 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/015-akcijski-laminat-1517-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "016-akcijski-laminat-1519-8-mm-32-ac4",
+      "title": "Akcijski laminat 1519 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/016-akcijski-laminat-1519-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "017-akcijski-laminat-1521-8-mm-32-ac4",
+      "title": "Akcijski laminat 1521 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/017-akcijski-laminat-1521-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "018-akcijski-laminat-1538-8-mm-32-ac4",
+      "title": "Akcijski laminat 1538 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/018-akcijski-laminat-1538-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "019-akcijski-laminat-3034-8-mm-32-ac4",
+      "title": "Akcijski laminat 3034 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/019-akcijski-laminat-3034-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "020-akcijski-laminat-3228-8-mm-32-ac4",
+      "title": "Akcijski laminat 3228 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/020-akcijski-laminat-3228-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "021-akcijski-laminat-3230-8-mm-32-ac4",
+      "title": "Akcijski laminat 3230 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/021-akcijski-laminat-3230-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "022-akcijski-laminat-419-8-mm-32-ac4",
+      "title": "Akcijski laminat 419 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/022-akcijski-laminat-419-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "023-akcijski-laminat-4282-8-mm-32-ac4",
+      "title": "Akcijski laminat 4282 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/023-akcijski-laminat-4282-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "024-akcijski-laminat-4284-8-mm-32-ac4",
+      "title": "Akcijski laminat 4284 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/024-akcijski-laminat-4284-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "025-akcijski-laminat-468-8-mm-32-ac4",
+      "title": "Akcijski laminat 468 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/025-akcijski-laminat-468-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "026-akcijski-laminat-5985-8-mm-32-ac4",
+      "title": "Akcijski laminat 5985 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/026-akcijski-laminat-5985-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "027-akcijski-laminat-6001-8-mm-32-ac4",
+      "title": "Akcijski laminat 6001 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/027-akcijski-laminat-6001-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "028-akcijski-laminat-6002-8-mm-32-ac4",
+      "title": "Akcijski laminat 6002 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/028-akcijski-laminat-6002-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "029-akcijski-laminat-6005-8-mm-32-ac4",
+      "title": "Akcijski laminat 6005 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/029-akcijski-laminat-6005-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "030-akcijski-laminat-6006-8-mm-32-ac4",
+      "title": "Akcijski laminat 6006 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/030-akcijski-laminat-6006-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "031-akcijski-laminat-8096-8-mm-32-ac4",
+      "title": "Akcijski laminat 8096 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/031-akcijski-laminat-8096-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "032-akcijski-laminat-82715-8-mm-32-ac4",
+      "title": "Akcijski laminat 82715 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/032-akcijski-laminat-82715-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "033-akcijski-laminat-82719-8-mm-32-ac4",
+      "title": "Akcijski laminat 82719 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/033-akcijski-laminat-82719-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "034-akcijski-laminat-8461-8-mm-32-ac4",
+      "title": "Akcijski laminat 8461 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/034-akcijski-laminat-8461-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "035-akcijski-laminat-8575-8-mm-32-ac4",
+      "title": "Akcijski laminat 8575 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/035-akcijski-laminat-8575-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "036-akcijski-laminat-8630-8-mm-32-ac4",
+      "title": "Akcijski laminat 8630 – 8 mm, 32/AC4",
+      "current": "799,60 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/036-akcijski-laminat-8630-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "037-akcijski-laminat-8633-8-mm-32-ac4",
+      "title": "Akcijski laminat 8633 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/037-akcijski-laminat-8633-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "038-akcijski-laminat-8v4326495-8-mm-32-ac4",
+      "title": "Akcijski laminat 8V4326495 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/038-akcijski-laminat-8v4326495-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "039-akcijski-laminat-d2023-12-mm-33-ac5",
+      "title": "Akcijski laminat D2023 – 12 mm, 33/AC5",
+      "current": "1.739,42 RSD",
+      "old": "2.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/039-akcijski-laminat-d2023-12-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-12-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "040-akcijski-laminat-d2562-12-mm-33-ac5",
+      "title": "Akcijski laminat D2562 – 12 mm, 33/AC5",
+      "current": "1.739,42 RSD",
+      "old": "2.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/040-akcijski-laminat-d2562-12-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-12-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "041-akcijski-laminat-d2583-12-mm-33-ac5",
+      "title": "Akcijski laminat D2583 – 12 mm, 33/AC5",
+      "current": "1.739,42 RSD",
+      "old": "2.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/041-akcijski-laminat-d2583-12-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-12-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "042-akcijski-laminat-d2594-12-mm-33-ac5",
+      "title": "Akcijski laminat D2594 – 12 mm, 33/AC5",
+      "current": "1.739,42 RSD",
+      "old": "2.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/042-akcijski-laminat-d2594-12-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-12-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "043-akcijski-laminat-d2597-12-mm-33-ac5",
+      "title": "Akcijski laminat D2597 – 12 mm, 33/AC5",
+      "current": "1.739,42 RSD",
+      "old": "2.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/043-akcijski-laminat-d2597-12-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-12-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "044-akcijski-laminat-d3030-7-mm-31-ac3",
+      "title": "Akcijski laminat D3030 – 7 mm, 31/AC3",
+      "current": "794,47 RSD",
+      "old": "1.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/044-akcijski-laminat-d3030-7-mm-31-ac3.jpg",
+      "categories": [
+        "akcijcki-laminat-7-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "045-akcijski-laminat-d3338-12-mm-33-ac5",
+      "title": "Akcijski laminat D3338 – 12 mm, 33/AC5",
+      "current": "1.739,42 RSD",
+      "old": "2.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/045-akcijski-laminat-d3338-12-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-12-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "046-akcijski-laminat-d3347-12-mm-33-ac5",
+      "title": "Akcijski laminat D3347 – 12 mm, 33/AC5",
+      "current": "1.739,42 RSD",
+      "old": "2.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/046-akcijski-laminat-d3347-12-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-12-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "047-akcijski-laminat-d3782-7-mm-31-ac3",
+      "title": "Akcijski laminat D3782 – 7 mm, 31/AC3",
+      "current": "794,47 RSD",
+      "old": "1.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/047-akcijski-laminat-d3782-7-mm-31-ac3.jpg",
+      "categories": [
+        "akcijcki-laminat-7-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "048-akcijski-laminat-d3784-7-mm-31-ac3",
+      "title": "Akcijski laminat D3784 – 7 mm, 31/AC3",
+      "current": "794,47 RSD",
+      "old": "1.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/048-akcijski-laminat-d3784-7-mm-31-ac3.jpg",
+      "categories": [
+        "akcijcki-laminat-7-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "049-akcijski-laminat-d4569-12-mm-33-ac5",
+      "title": "Akcijski laminat D4569 – 12 mm, 33/AC5",
+      "current": "1.739,42 RSD",
+      "old": "2.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/049-akcijski-laminat-d4569-12-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-12-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "050-akcijski-laminat-d4900-12-mm-33-ac5",
+      "title": "Akcijski laminat D4900 – 12 mm, 33/AC5",
+      "current": "1.739,42 RSD",
+      "old": "2.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/050-akcijski-laminat-d4900-12-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-12-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "051-akcijski-laminat-d8014-12-mm-33-ac5",
+      "title": "Akcijski laminat D8014 – 12 mm, 33/AC5",
+      "current": "1.739,42 RSD",
+      "old": "2.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/051-akcijski-laminat-d8014-12-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-12-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "052-akcijski-laminat-eiche-alba-8-2-mm-33-ac5",
+      "title": "Akcijski laminat Eiche Alba – 8+2 mm, 33/AC5",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/052-akcijski-laminat-eiche-alba-8-2-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "053-akcijski-laminat-eiche-asti-10-mm-32-ac4",
+      "title": "Akcijski laminat Eiche Asti – 10 mm, 32/AC4",
+      "current": "1.174,53 RSD",
+      "old": "2.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/053-akcijski-laminat-eiche-asti-10-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-10-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "054-akcijski-laminat-eiche-bastogne-8-2-mm-33-ac5",
+      "title": "Akcijski laminat Eiche Bastogne – 8+2 mm, 33/AC5",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/054-akcijski-laminat-eiche-bastogne-8-2-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "055-akcijski-laminat-eiche-loreta-10-mm-32-ac4",
+      "title": "Akcijski laminat Eiche Loreta – 10 mm, 32/AC4",
+      "current": "1.174,53 RSD",
+      "old": "2.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/055-akcijski-laminat-eiche-loreta-10-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-10-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "056-akcijski-laminat-eiche-napoli-8-2-mm-33-ac5",
+      "title": "Akcijski laminat Eiche Napoli – 8+2 mm, 33/AC5",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/056-akcijski-laminat-eiche-napoli-8-2-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "057-akcijski-laminat-eiche-natur-l981-8-mm-32-ac4",
+      "title": "Akcijski laminat Eiche Natur L981 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/057-akcijski-laminat-eiche-natur-l981-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "058-akcijski-laminat-eiche-theos-10-mm-32-ac4",
+      "title": "Akcijski laminat Eiche Theos – 10 mm, 32/AC4",
+      "current": "1.174,53 RSD",
+      "old": "2.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/058-akcijski-laminat-eiche-theos-10-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-10-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "059-akcijski-laminat-fresno-dakota-10-mm-33-ac5",
+      "title": "Akcijski laminat Fresno Dakota – 10 mm, 33/AC5",
+      "current": "1.174,53 RSD",
+      "old": "2.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/059-akcijski-laminat-fresno-dakota-10-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-10-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "060-akcijski-laminat-gudhjem-10-mm-33-ac5",
+      "title": "Akcijski laminat Gudhjem – 10 mm, 33/AC5",
+      "current": "1.174,53 RSD",
+      "old": "2.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/060-akcijski-laminat-gudhjem-10-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-10-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "061-akcijski-laminat-helstone-7-mm-31-ac3",
+      "title": "Akcijski laminat Helstone – 7 mm, 31/AC3",
+      "current": "794,47 RSD",
+      "old": "1.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/061-akcijski-laminat-helstone-7-mm-31-ac3.jpg",
+      "categories": [
+        "akcijcki-laminat-7-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "062-akcijski-laminat-honig-eiche-8-2-mm-33-ac5",
+      "title": "Akcijski laminat Honig Eiche – 8+2 mm, 33/AC5",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/062-akcijski-laminat-honig-eiche-8-2-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "063-akcijski-laminat-k002-8-mm-32-ac4",
+      "title": "Akcijski laminat K002 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/063-akcijski-laminat-k002-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "064-akcijski-laminat-k031-8-mm-32-ac4",
+      "title": "Akcijski laminat K031 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/064-akcijski-laminat-k031-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "065-akcijski-laminat-k039-8-mm-32-ac4",
+      "title": "Akcijski laminat K039 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/065-akcijski-laminat-k039-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "066-akcijski-laminat-k042-8-mm-32-ac4",
+      "title": "Akcijski laminat K042 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/066-akcijski-laminat-k042-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "067-akcijski-laminat-k269-8-mm-32-ac4",
+      "title": "Akcijski laminat K269 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/067-akcijski-laminat-k269-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "068-akcijski-laminat-k325-8-mm-32-ac4",
+      "title": "Akcijski laminat K325 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/068-akcijski-laminat-k325-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "069-akcijski-laminat-k408p-8-mm-32-ac4",
+      "title": "Akcijski laminat K408P – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/069-akcijski-laminat-k408p-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "070-akcijski-laminat-k418-8-mm-32-ac4",
+      "title": "Akcijski laminat K418 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/070-akcijski-laminat-k418-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "071-akcijski-laminat-k420-8-mm-32-ac4",
+      "title": "Akcijski laminat K420 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/071-akcijski-laminat-k420-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "072-akcijski-laminat-k451-dorota-junction-8-mm-32-ac4",
+      "title": "Akcijski laminat K451 Dorota Junction – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/072-akcijski-laminat-k451-dorota-junction-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "073-akcijski-laminat-k464-8-mm-32-ac4",
+      "title": "Akcijski laminat K464 – 8 mm, 32/AC4",
+      "current": "799,60 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/073-akcijski-laminat-k464-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "074-akcijski-laminat-k473-10-mm-33-ac5",
+      "title": "Akcijski laminat K473 – 10 mm, 33/AC5",
+      "current": "1.174,53 RSD",
+      "old": "2.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/074-akcijski-laminat-k473-10-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-10-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "075-akcijski-laminat-k482p-8-mm-32-ac4",
+      "title": "Akcijski laminat K482P – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/075-akcijski-laminat-k482p-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "076-akcijski-laminat-k485p-8-mm-32-ac4",
+      "title": "Akcijski laminat K485P – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/076-akcijski-laminat-k485p-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "077-akcijski-laminat-k650-8-mm-32-ac4",
+      "title": "Akcijski laminat K650 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/077-akcijski-laminat-k650-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "078-akcijski-laminat-k659-12-mm-33-ac5",
+      "title": "Akcijski laminat K659 – 12 mm, 33/AC5",
+      "current": "1.379,54 RSD",
+      "old": "2.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/078-akcijski-laminat-k659-12-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-12-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "079-akcijski-laminat-l980-8-mm-32-ac4",
+      "title": "Akcijski laminat L980 – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/079-akcijski-laminat-l980-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "080-akcijski-laminat-logoclic-eiche-monca-8-mm-32-ac4",
+      "title": "Akcijski laminat Logoclic Eiche Monca – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/080-akcijski-laminat-logoclic-eiche-monca-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "081-akcijski-laminat-logoclic-eiche-piano-8-mm-32-ac4",
+      "title": "Akcijski laminat Logoclic Eiche Piano – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/081-akcijski-laminat-logoclic-eiche-piano-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "082-akcijski-laminat-lota-8-mm-32-ac4",
+      "title": "Akcijski laminat Lota – 8 mm, 32/AC4",
+      "current": "799,60 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/082-akcijski-laminat-lota-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "083-akcijski-laminat-milano-larch-8-2-mm-33-ac5",
+      "title": "Akcijski laminat Milano Larch – 8+2 mm, 33/AC5",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/083-akcijski-laminat-milano-larch-8-2-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "084-akcijski-laminat-oak-empire-wide-8-mm-32-ac4",
+      "title": "Akcijski laminat Oak Empire Wide – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/084-akcijski-laminat-oak-empire-wide-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "085-akcijski-laminat-omedo-8-mm-32-ac4",
+      "title": "Akcijski laminat Omedo – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/085-akcijski-laminat-omedo-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "086-akcijski-laminat-padiham-7-mm-31-ac3",
+      "title": "Akcijski laminat Padiham – 7 mm, 31/AC3",
+      "current": "794,47 RSD",
+      "old": "1.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/086-akcijski-laminat-padiham-7-mm-31-ac3.jpg",
+      "categories": [
+        "akcijcki-laminat-7-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "087-akcijski-laminat-paola-10-mm-32-ac4",
+      "title": "Akcijski laminat Paola – 10 mm, 32/AC4",
+      "current": "1.174,53 RSD",
+      "old": "2.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/087-akcijski-laminat-paola-10-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-10-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "088-akcijski-laminat-richelle-8-mm-32-ac4",
+      "title": "Akcijski laminat Richelle – 8 mm, 32/AC4",
+      "current": "1.059,47 RSD",
+      "old": "1.999,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/088-akcijski-laminat-richelle-8-mm-32-ac4.jpg",
+      "categories": [
+        "akcijski-laminat-8-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "089-akcijski-laminat-sava-grande-10-mm-33-ac5",
+      "title": "Akcijski laminat Sava Grande – 10 mm, 33/AC5",
+      "current": "1.174,53 RSD",
+      "old": "2.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/089-akcijski-laminat-sava-grande-10-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-10-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "090-akcijski-laminat-seville-10-mm-33-ac5",
+      "title": "Akcijski laminat Seville – 10 mm, 33/AC5",
+      "current": "1.174,53 RSD",
+      "old": "2.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/090-akcijski-laminat-seville-10-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-10-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "091-akcijski-laminat-tyra-7-mm-31-ac3",
+      "title": "Akcijski laminat Tyra – 7 mm, 31/AC3",
+      "current": "794,47 RSD",
+      "old": "1.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/091-akcijski-laminat-tyra-7-mm-31-ac3.jpg",
+      "categories": [
+        "akcijcki-laminat-7-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "092-akcijski-laminat-vigo-10-mm-33-ac5",
+      "title": "Akcijski laminat Vigo – 10 mm, 33/AC5",
+      "current": "1.174,53 RSD",
+      "old": "2.499,00 RSD",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/092-akcijski-laminat-vigo-10-mm-33-ac5.jpg",
+      "categories": [
+        "akcijski-laminat-10-mm",
+        "akcija"
+      ]
+    },
+    {
+      "id": "093-dvokrilna-vrata",
+      "title": "Dvokrilna vrata",
+      "current": "Cena na upit",
+      "old": "",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/093-dvokrilna-vrata.jpg",
+      "categories": [
+        "dodatne-opcije"
+      ]
+    },
+    {
+      "id": "094-k278-nevis-oak-12-mm-33-ac6",
+      "title": "K278 Nevis Oak – 12 mm, 33/AC6",
+      "current": "1.889,37 RSD",
+      "old": "2.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/094-k278-nevis-oak-12-mm-33-ac6.jpg",
+      "categories": [
+        "empire-laminat-12-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "095-k338-credenza-oak-8-mm-32-ac4",
+      "title": "K338 Credenza Oak – 8 mm, 32/AC4",
+      "current": "1.359,32 RSD",
+      "old": "1.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/095-k338-credenza-oak-8-mm-32-ac4.jpg",
+      "categories": [
+        "evergreen-laminat-8-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "096-k418-longbow-oak-8-mm-32-ac4",
+      "title": "K418 Longbow Oak – 8 mm, 32/AC4",
+      "current": "1.359,32 RSD",
+      "old": "1.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/096-k418-longbow-oak-8-mm-32-ac4.jpg",
+      "categories": [
+        "evergreen-laminat-8-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "097-k461-joyse-oak-12-mm-33-ac6",
+      "title": "K461 Joyse Oak – 12 mm, 33/AC6",
+      "current": "1.979,34 RSD",
+      "old": "2.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/097-k461-joyse-oak-12-mm-33-ac6.jpg",
+      "categories": [
+        "empire-laminat-12-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "098-k468-gondola-oak-8-mm-32-ac4",
+      "title": "K468 Gondola Oak – 8 mm, 32/AC4",
+      "current": "1.359,32 RSD",
+      "old": "1.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/098-k468-gondola-oak-8-mm-32-ac4.jpg",
+      "categories": [
+        "evergreen-laminat-8-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "099-k469-vicovero-12-mm-33-ac6",
+      "title": "K469 Vicovero – 12 mm, 33/AC6",
+      "current": "1.979,34 RSD",
+      "old": "2.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/099-k469-vicovero-12-mm-33-ac6.jpg",
+      "categories": [
+        "empire-laminat-12-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "100-k471-mandiosa-oak-12-mm-33-ac6",
+      "title": "K471 Mandiosa Oak – 12 mm, 33/AC6",
+      "current": "1.979,34 RSD",
+      "old": "2.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/100-k471-mandiosa-oak-12-mm-33-ac6.jpg",
+      "categories": [
+        "empire-laminat-12-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "101-k483-antique-sterling-oak-8-mm-32-ac4",
+      "title": "K483 Antique Sterling Oak – 8 mm, 32/AC4",
+      "current": "1.359,32 RSD",
+      "old": "1.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/101-k483-antique-sterling-oak-8-mm-32-ac4.jpg",
+      "categories": [
+        "evergreen-laminat-8-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "102-k5946-rockford-oak-8-mm-32-ac4",
+      "title": "K5946 Rockford Oak – 8 mm, 32/AC4",
+      "current": "1.359,32 RSD",
+      "old": "1.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/102-k5946-rockford-oak-8-mm-32-ac4.jpg",
+      "categories": [
+        "evergreen-laminat-8-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "103-k600-rowan-oak-12-mm-33-ac6",
+      "title": "K600 Rowan Oak – 12 mm, 33/AC6",
+      "current": "1.979,34 RSD",
+      "old": "2.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/103-k600-rowan-oak-12-mm-33-ac6.jpg",
+      "categories": [
+        "empire-laminat-12-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "104-k627-rye-savory-oak-12-mm-33-ac6",
+      "title": "K627 Rye Savory Oak – 12 mm, 33/AC6",
+      "current": "1.979,34 RSD",
+      "old": "2.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/104-k627-rye-savory-oak-12-mm-33-ac6.jpg",
+      "categories": [
+        "empire-laminat-12-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "105-k638-jaxx-oak-12-mm-33-ac6",
+      "title": "K638 Jaxx Oak – 12 mm, 33/AC6",
+      "current": "1.979,34 RSD",
+      "old": "2.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/105-k638-jaxx-oak-12-mm-33-ac6.jpg",
+      "categories": [
+        "empire-laminat-12-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "106-k647-charlock-oak-8-mm-32-ac4",
+      "title": "K647 Charlock Oak – 8 mm, 32/AC4",
+      "current": "1.359,32 RSD",
+      "old": "1.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/106-k647-charlock-oak-8-mm-32-ac4.jpg",
+      "categories": [
+        "evergreen-laminat-8-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "107-k791-dab-light-fairwolf-12-mm-33-ac6",
+      "title": "K791 Dab Light Fairwolf – 12 mm, 33/AC6",
+      "current": "1.979,34 RSD",
+      "old": "2.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "light",
+      "image": "assets/catalog/107-k791-dab-light-fairwolf-12-mm-33-ac6.jpg",
+      "categories": [
+        "empire-laminat-12-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "108-k795-dab-tan-parioli-12-mm-33-ac6",
+      "title": "K795 Dab Tan Parioli – 12 mm, 33/AC6",
+      "current": "1.979,34 RSD",
+      "old": "2.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/108-k795-dab-tan-parioli-12-mm-33-ac6.jpg",
+      "categories": [
+        "empire-laminat-12-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "109-k796-tawny-fairwolf-oak-8-mm-32-ac4",
+      "title": "K796 Tawny Fairwolf Oak – 8 mm, 32/AC4",
+      "current": "1.359,32 RSD",
+      "old": "1.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/109-k796-tawny-fairwolf-oak-8-mm-32-ac4.jpg",
+      "categories": [
+        "evergreen-laminat-8-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "110-k8573-harlech-oak-8-mm-32-ac4",
+      "title": "K8573 Harlech Oak – 8 mm, 32/AC4",
+      "current": "1.359,32 RSD",
+      "old": "1.999,00 RSD",
+      "type": "kolekcija",
+      "tone": "natural",
+      "image": "assets/catalog/110-k8573-harlech-oak-8-mm-32-ac4.jpg",
+      "categories": [
+        "evergreen-laminat-8-mm",
+        "kolekcija"
+      ]
+    },
+    {
+      "id": "111-klizna-vrata",
+      "title": "Klizna vrata",
+      "current": "Cena na upit",
+      "old": "",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/111-klizna-vrata.jpg",
+      "categories": [
+        "dodatne-opcije"
+      ]
+    },
+    {
+      "id": "112-sobna-vrata-farbana-bela",
+      "title": "Sobna vrata FARBANA – Bela",
+      "current": "33.000,00 RSD",
+      "old": "",
+      "type": "vrata",
+      "tone": "light",
+      "image": "assets/catalog/112-sobna-vrata-farbana-bela.jpg",
+      "categories": [
+        "sobna-vrata"
+      ]
+    },
+    {
+      "id": "113-sobna-vrata-portofino-bela",
+      "title": "Sobna vrata PORTOFINO – Bela",
+      "current": "25.500,00 RSD",
+      "old": "",
+      "type": "vrata",
+      "tone": "light",
+      "image": "assets/catalog/113-sobna-vrata-portofino-bela.jpg",
+      "categories": [
+        "sobna-vrata"
+      ]
+    },
+    {
+      "id": "114-sobna-vrata-portofino-gold-royal",
+      "title": "Sobna vrata PORTOFINO – Gold Royal",
+      "current": "25.500,00 RSD",
+      "old": "",
+      "type": "vrata",
+      "tone": "natural",
+      "image": "assets/catalog/114-sobna-vrata-portofino-gold-royal.jpg",
+      "categories": [
+        "sobna-vrata"
+      ]
+    },
+    {
+      "id": "115-sobna-vrata-portofino-orah",
+      "title": "Sobna vrata PORTOFINO – Orah",
+      "current": "25.500,00 RSD",
+      "old": "",
+      "type": "vrata",
+      "tone": "natural",
+      "image": "assets/catalog/115-sobna-vrata-portofino-orah.jpg",
+      "categories": [
+        "sobna-vrata"
+      ]
+    },
+    {
+      "id": "116-sobna-vrata-portofino-silver-royal",
+      "title": "Sobna vrata PORTOFINO – Silver Royal",
+      "current": "25.500,00 RSD",
+      "old": "",
+      "type": "vrata",
+      "tone": "natural",
+      "image": "assets/catalog/116-sobna-vrata-portofino-silver-royal.jpg",
+      "categories": [
+        "sobna-vrata"
+      ]
+    },
+    {
+      "id": "117-sobna-vrata-portofino-skandinavski-hrast",
+      "title": "Sobna vrata PORTOFINO – Skandinavski hrast",
+      "current": "25.500,00 RSD",
+      "old": "",
+      "type": "vrata",
+      "tone": "natural",
+      "image": "assets/catalog/117-sobna-vrata-portofino-skandinavski-hrast.jpg",
+      "categories": [
+        "sobna-vrata"
+      ]
+    },
+    {
+      "id": "118-sobna-vrata-premium-americki-orah",
+      "title": "Sobna vrata PREMIUM – Američki orah",
+      "current": "32.500,00 RSD",
+      "old": "",
+      "type": "vrata",
+      "tone": "natural",
+      "image": "assets/catalog/118-sobna-vrata-premium-americki-orah.jpg",
+      "categories": [
+        "sobna-vrata"
+      ]
+    },
+    {
+      "id": "119-sobna-vrata-premium-cappuccino",
+      "title": "Sobna vrata PREMIUM – Cappuccino",
+      "current": "32.500,00 RSD",
+      "old": "",
+      "type": "vrata",
+      "tone": "natural",
+      "image": "assets/catalog/119-sobna-vrata-premium-cappuccino.jpg",
+      "categories": [
+        "sobna-vrata"
+      ]
+    },
+    {
+      "id": "120-sobna-vrata-premium-matrix",
+      "title": "Sobna vrata PREMIUM – Matrix",
+      "current": "32.500,00 RSD",
+      "old": "",
+      "type": "vrata",
+      "tone": "natural",
+      "image": "assets/catalog/120-sobna-vrata-premium-matrix.jpg",
+      "categories": [
+        "sobna-vrata"
+      ]
+    },
+    {
+      "id": "121-sobna-vrata-siena-beli-hrast",
+      "title": "Sobna vrata SIENA – Beli hrast",
+      "current": "23.500,00 RSD",
+      "old": "",
+      "type": "vrata",
+      "tone": "light",
+      "image": "assets/catalog/121-sobna-vrata-siena-beli-hrast.jpg",
+      "categories": [
+        "sobna-vrata"
+      ]
+    },
+    {
+      "id": "122-sobna-vrata-siena-natur-hrast",
+      "title": "Sobna vrata SIENA – Natur hrast",
+      "current": "23.500,00 RSD",
+      "old": "",
+      "type": "vrata",
+      "tone": "natural",
+      "image": "assets/catalog/122-sobna-vrata-siena-natur-hrast.jpg",
+      "categories": [
+        "sobna-vrata"
+      ]
+    },
+    {
+      "id": "123-vrata-sa-nadsvetlom",
+      "title": "Vrata sa nadsvetlom",
+      "current": "Cena na upit",
+      "old": "",
+      "type": "akcija",
+      "tone": "light",
+      "image": "assets/catalog/123-vrata-sa-nadsvetlom.jpg",
+      "categories": [
+        "dodatne-opcije"
+      ]
+    },
+    {
+      "id": "124-vrata-sa-otvorima-za-staklo",
+      "title": "Vrata sa otvorima za staklo",
+      "current": "Cena na upit",
+      "old": "",
+      "type": "akcija",
+      "tone": "natural",
+      "image": "assets/catalog/124-vrata-sa-otvorima-za-staklo.jpg",
+      "categories": [
+        "dodatne-opcije"
+      ]
+    }
+  ]
+}

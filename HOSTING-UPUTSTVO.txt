@@ -1,0 +1,38 @@
+GREEN LAMINATI — FAJLOVI ZA HOSTING
+===================================
+
+Ovo je kompletan statički sajt. Ne zahteva Node.js, Python ni bazu podataka.
+
+KLASIČAN HOSTING / CPANEL
+1. Otvori File Manager.
+2. Uđi u public_html folder svog domena.
+3. Ubaci SADRŽAJ ovog foldera direktno u public_html.
+4. index.html mora biti direktno u public_html, a ne u dodatnom podfolderu.
+5. Otvori domen i osveži stranicu sa Ctrl+F5.
+
+VERCEL
+1. Napravi novi projekat i izaberi ovaj folder ili GitHub repozitorijum.
+2. Framework Preset: Other.
+3. Build Command: ostavi prazno.
+4. Output Directory: .
+5. Deploy.
+
+NETLIFY
+Prevuci ovaj ceo folder u Netlify Drop. Nije potrebna dodatna konfiguracija.
+
+GITHUB PAGES
+Postavi sadržaj foldera u root repozitorijuma, uključi Pages za glavnu granu i root folder.
+
+VAŽNO
+- Ne menjaj nazive foldera assets niti fajla catalog.json.
+- Sajt mora da se otvara preko http/https servera. Direktno otvaranje index.html sa diska
+  može sprečiti učitavanje kataloga zbog bezbednosnih pravila pregledača.
+- Kontakt forma otvara korisnikov e-mail program i priprema poruku za
+  maloprodaja@greenlaminati.rs.
+- Pre objave na zvaničnom domenu proveri aktuelnost cena i odobrenje za fotografije/proizvode.
+
+LOKALNA PROVERA
+Ako imaš Python:
+  python -m http.server 8080
+Zatim otvori:
+  http://127.0.0.1:8080

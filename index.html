@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Green Laminati — kompletan katalog laminata i sobnih vrata, kalkulator potrebne količine i stručan savet za vaš enterijer.">
+  <title>Green Laminati — prostor počinje od poda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Green Laminati početna">
+      <span>GREEN</span><b></b><strong>LAMINATI</strong>
+    </a>
+    <nav class="desktop-nav" aria-label="Glavna navigacija">
+      <a href="#kolekcije">Kolekcije</a>
+      <a href="#katalog">Dekori</a>
+      <a href="#inspiracija">Inspiracija</a>
+      <a href="#pitanja">Pitanja</a>
+      <a href="#saloni">Saloni</a>
+    </nav>
+    <a class="header-cta" href="#upit">Zatražite savet <span class="icon icon-ne" aria-hidden="true"></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-label="Otvori meni"><i></i><i></i></button>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">LAMINATI · VRATA · AKUSTIČNI PANELI</p>
+        <h1 id="hero-title">Prostor počinje<br><em>od poda.</em></h1>
+        <p class="hero-lead">Pažljivo odabrani dekori, stručan savet i materijali koji svakom enterijeru daju karakter.</p>
+        <div class="hero-actions">
+          <a class="button button-solid" href="#katalog">Istražite dekore <span class="icon icon-down" aria-hidden="true"></span></a>
+          <a class="button button-glass" href="#upit">Pronađite pravi pod</a>
+        </div>
+      </div>
+      <aside class="hero-3d" id="heroPlankViewport" aria-label="Interaktivni 3D prikaz laminata">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-plank-shadow"></div>
+        <div class="hero-plank-scene">
+          <div class="hero-plank" id="heroPlank">
+            <div class="plank-face plank-front"></div><div class="plank-face plank-back"></div>
+            <div class="plank-face plank-top"></div><div class="plank-face plank-bottom"></div>
+            <div class="plank-face plank-left"></div><div class="plank-face plank-right"></div>
+          </div>
+        </div>
+        <div class="hero-plank-label"><span>01 / KOLEKCIJA</span><strong>Soft Shade 120</strong><small>ROTIRAJTE POKAZIVAČEM</small></div>
+      </aside>
+      <div class="hero-scroll"><span></span>Skrolujte za kolekcije</div>
+    </section>
+
+    <section class="trust-strip" aria-label="Prednosti Green Laminati">
+      <div><strong>200+</strong><span>dekora u ponudi</span></div>
+      <div><strong>4</strong><span>grada širom Srbije</span></div>
+      <div><strong>30 god.</strong><span>garancije za odabrane modele</span></div>
+      <div><strong>Stručan savet</strong><span>u svakom salonu</span></div>
+    </section>
+
+    <section class="collections section" id="kolekcije">
+      <div class="section-head" data-reveal>
+        <div><p class="eyebrow dark">PRONAĐITE SVOJ STIL</p><h2>Četiri načina da<br>promenite prostor.</h2></div>
+        <p>Od prve ideje do završnog detalja — istražite pažljivo odabranu ponudu za dom i poslovni prostor.</p>
+      </div>
+      <div class="collection-grid">
+        <a class="collection-card large" href="#katalog" data-catalog-filter="natural" data-reveal>
+          <img src="assets/category-collection.jpg" alt="Kolekcijski laminati">
+          <span>01</span><div><small>PRIRODNI TONOVI</small><h3>Kolekcijski laminat</h3><p>Dugoročna dostupnost i kvalitet prve klase.</p></div><b class="icon icon-ne" aria-hidden="true"></b>
+        </a>
+        <a class="collection-card" href="#katalog" data-reveal>
+          <img src="assets/category-sale.jpg" alt="Laminati na akciji">
+          <span>02</span><div><small>OGRANIČENE ZALIHE</small><h3>Akcijski laminat</h3><p>Vrhunski dekori po posebnim cenama.</p></div><b class="icon icon-ne" aria-hidden="true"></b>
+        </a>
+        <a class="collection-card" href="#inspiracija" data-reveal>
+          <img src="assets/category-doors.jpg" alt="Sobna vrata">
+          <span>03</span><div><small>ZAVRŠNI POTPIS</small><h3>Sobna vrata</h3><p>Modeli koji povezuju ceo enterijer.</p></div><b class="icon icon-ne" aria-hidden="true"></b>
+        </a>
+        <a class="collection-card" href="#inspiracija" data-reveal>
+          <img src="assets/category-panels.jpg" alt="Akustični paneli">
+          <span>04</span><div><small>TIŠINA SA STILOM</small><h3>Akustični paneli</h3><p>Toplina drveta i prijatniji zvuk prostora.</p></div><b class="icon icon-ne" aria-hidden="true"></b>
+        </a>
+      </div>
+    </section>
+
+    <section class="catalog section" id="katalog">
+      <div class="catalog-intro" data-reveal>
+        <p class="eyebrow">AKTUELNA PONUDA</p>
+        <h2>Dodir prirode.<br><em>Napravljen da traje.</em></h2>
+        <p>Filtrirajte dekore po tonu i otvorite detalje proizvoda bez napuštanja stranice.</p>
+      </div>
+      <div class="catalog-toolbar" data-reveal>
+        <div class="catalog-tabs" role="group" aria-label="Kategorije proizvoda"><button class="catalog-tab active" data-type="all">Sve <span>124</span></button><button class="catalog-tab" data-type="kolekcija">Kolekcija</button><button class="catalog-tab" data-type="akcija">Akcija</button><button class="catalog-tab" data-type="vrata">Sobna vrata</button></div>
+        <label class="catalog-search"><span class="search-icon" aria-hidden="true"></span><input id="catalogSearch" type="search" placeholder="Pretražite naziv, šifru ili kolekciju…" aria-label="Pretražite katalog"></label>
+      </div>
+      <div class="catalog-status"><p id="catalogCount">Učitavamo kompletan katalog…</p><div class="tone-row" role="group" aria-label="Ton dekora"><button class="tone active" data-tone="all">Svi tonovi</button><button class="tone" data-tone="light">Svetli</button><button class="tone" data-tone="natural">Prirodni</button><button class="tone" data-tone="dark">Tamni</button></div></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <button class="load-more" id="loadMore" type="button">Prikažite još proizvoda <span class="icon icon-down" aria-hidden="true"></span></button>
+    </section>
+
+    <section class="faq section" id="pitanja">
+      <div class="faq-heading" data-reveal><p class="eyebrow dark">VODIČ ZA SIGURAN IZBOR</p><h2>Sve što treba da znate<br><em>pre kupovine.</em></h2><p>Jasni odgovori o klasama, ugradnji, održavanju, dostavi i plaćanju — na jednom mestu.</p></div>
+      <div class="faq-list" data-reveal>
+        <details open><summary>Kako da izaberem odgovarajuću debljinu i klasu?<span></span></summary><p>Za spavaće sobe i mirnije zone dovoljne su lakše klase, dok su dnevne sobe, hodnici i poslovni prostori bolji kandidati za 8–12 mm i klase 32/AC4 ili 33/AC5. Klasa 33 pruža višu otpornost u veoma prometnim prostorima.</p></details>
+        <details><summary>Koliko laminata treba dodati na čistu kvadraturu?<span></span></summary><p>Uobičajena rezerva je 3–5% zbog krojenja i uklapanja uz zidove. Kod složenijih prostorija i dijagonalnog polaganja može biti korisna rezerva od 8%. Kalkulator iznad daje broj paketa sa izabranom rezervom.</p></details>
+        <details><summary>Da li laminat može preko podnog grejanja?<span></span></summary><p>Većina modernih modela je kompatibilna sa podnim grejanjem, uz odgovarajuću podlogu sa niskim toplotnim otporom. Za konkretan model zatražite potvrdu našeg savetnika pre kupovine.</p></details>
+        <details><summary>Da li je laminat vodootporan?<span></span></summary><p>Laminat podnosi svakodnevnu vlagu i održavanje dobro isceđenom krpom, ali nije namenjen potapanju niti dugotrajnom zadržavanju vode. Prosutu tečnost treba obrisati bez odlaganja.</p></details>
+        <details><summary>Zašto su podloga i aklimatizacija važne?<span></span></summary><p>Podloga ublažava sitne neravnine, zvuk koraka i kontakt sa vlagom. Neotvorene pakete treba ostaviti najmanje 48 sati u prostoriji u kojoj će se ugrađivati kako bi se materijal prilagodio uslovima.</p></details>
+        <details><summary>Kako funkcionišu dostava i plaćanje?<span></span></summary><p>Besplatna kućna dostava dostupna je za račune preko 70.000 RSD. U salonima je, u zavisnosti od iznosa, moguće odloženo plaćanje do tri mesečne rate čekovima ili odgovarajućim karticama.</p></details>
+        <details><summary>Mogu li da rezervišem dekor iz akcijske ponude?<span></span></summary><p>Akcijski modeli imaju ograničene količine i brzo se menjaju. Pošaljite šifru proizvoda i potrebnu kvadraturu kroz obrazac, a tim će proveriti stanje i mogućnost rezervacije.</p></details>
+      </div>
+    </section>
+
+    <section class="immersive" id="inspiracija">
+      <div class="immersive-image"><img src="assets/premium-floor-interior.png" alt="Moderan enterijer sa prirodnim hrastovim podom i tamno-zelenim zidovima"></div>
+      <div class="immersive-copy" data-reveal>
+        <p class="eyebrow">VIDITE CELINU</p>
+        <h2>Ne birate samo pod.<br><em>Birate atmosferu.</em></h2>
+        <p>Tekstura poda, ton vrata i detalji zida zajedno određuju kako prostor izgleda i kako se u njemu osećate.</p>
+        <ul><li><span>01</span>Uskladite ton poda i vrata</li><li><span>02</span>Uporedite uzorke na dnevnom svetlu</li><li><span>03</span>Potvrdite izbor uz savet stručnjaka</li></ul>
+        <a class="button button-outline" href="#saloni">Doživite dekore uživo</a>
+      </div>
+    </section>
+
+    <section class="calculator section" aria-labelledby="calc-title">
+      <div class="calculator-copy" data-reveal><p class="eyebrow dark">PAMETNIJE PLANIRANJE</p><h2 id="calc-title">Koliko laminata vam je potrebno?</h2><p>Unesite kvadraturu prostorije. Kalkulator automatski dodaje preporučenu rezervu za krojenje.</p></div>
+      <form class="calc-card" id="calculator" data-reveal>
+        <div class="calc-top"><span>PLANER MATERIJALA</span><b>01</b></div>
+        <div class="calc-layout">
+          <div class="calc-controls">
+            <label for="area">Površina prostorije <output id="areaOutput">24 m²</output></label>
+            <input class="premium-range" id="area" type="range" min="1" max="150" value="24">
+            <div class="calc-scale"><span>1 m²</span><span>150 m²</span></div>
+            <fieldset><legend>Rezerva za krojenje</legend><div class="segment-control"><label><input type="radio" name="waste" value="3"><span>3%</span></label><label><input type="radio" name="waste" value="5" checked><span>5%</span></label><label><input type="radio" name="waste" value="8"><span>8%</span></label></div></fieldset>
+            <label class="pack-field" for="pack">Pokrivenost paketa <span><input id="pack" type="number" min="0.5" max="5" step="0.01" value="2.22"> m²</span></label>
+          </div>
+          <div class="calc-result" id="calcResult"><div class="result-ring"><div><small>UKUPNO</small><strong id="packs">12</strong><span>paketa</span></div></div><p id="coverage">≈ 26,64 m² ukupne pokrivenosti</p><small>Uračunata preporučena rezerva</small></div>
+        </div>
+        <a class="calc-cta" href="#upit">Proverite cenu i dostupnost <b class="icon icon-ne" aria-hidden="true"></b></a>
+      </form>
+    </section>
+
+    <section class="locations section" id="saloni">
+      <div class="section-head" data-reveal><div><p class="eyebrow dark">BLIZU VAS</p><h2>Osetite teksturu.<br>Vidite pravu nijansu.</h2></div><p>Ekran ne može u potpunosti da prenese boju, reljef i osećaj materijala. Posetite najbliži salon i ponesite fotografiju svog prostora.</p></div>
+      <div class="location-hub" data-reveal>
+        <aside class="location-visual" aria-hidden="true">
+          <div class="map-glow"></div><div class="map-line line-one"></div><div class="map-line line-two"></div>
+          <span class="map-pin pin-bg"><i></i><b>BEOGRAD</b></span><span class="map-pin pin-kg"><i></i><b>KRAGUJEVAC</b></span><span class="map-pin pin-ca"><i></i><b>ČAČAK</b></span><span class="map-pin pin-ni"><i></i><b>NIŠ</b></span>
+          <div class="location-visual-copy"><small>PRODAJNA MREŽA</small><strong>9 salona<br>u 4 grada.</strong><p>Izaberite grad i pronađite adresu, direktan telefon i radno vreme najbližeg salona.</p></div>
+        </aside>
+        <div class="location-browser">
+          <div class="city-tabs" role="group" aria-label="Filtrirajte salone po gradu"><button class="city-tab active" data-city="all">Svi saloni</button><button class="city-tab" data-city="beograd">Beograd</button><button class="city-tab" data-city="nis">Niš</button><button class="city-tab" data-city="cacak">Čačak</button><button class="city-tab" data-city="kragujevac">Kragujevac</button></div>
+          <div class="salon-grid" id="salonGrid">
+            <article class="salon-card" data-city="beograd"><div class="salon-number">01</div><small>SURČIN · MALOPRODAJA 1</small><h3>Vojvođanska 392b</h3><p>Pon–pet 08:00–19:00<br>Subota 08:00–15:00</p><a href="tel:+381603142042">+381 60 3142 042</a><a class="salon-mail" href="mailto:maloprodaja@greenlaminati.rs">maloprodaja@greenlaminati.rs</a></article>
+            <article class="salon-card" data-city="beograd"><div class="salon-number">02</div><small>ZRENJANINSKI PUT · MALOPRODAJA 2</small><h3>Zrenjaninski put 88M</h3><p>Pon–pet 08:00–19:00<br>Subota 08:00–15:00</p><a href="tel:+381112085800">+381 11 20 858 00</a><a class="salon-mail" href="mailto:maloprodaja2@greenlaminati.rs">maloprodaja2@greenlaminati.rs</a></article>
+            <article class="salon-card" data-city="beograd"><div class="salon-number">03</div><small>SMEDEREVSKI PUT · MALOPRODAJA 3</small><h3>Smederevski put 4A</h3><p>Pon–pet 08:00–19:00<br>Subota 08:00–15:00</p><a href="tel:+381114085602">+381 11 408 56 02</a><a class="salon-mail" href="mailto:maloprodaja3@greenlaminati.rs">maloprodaja3@greenlaminati.rs</a></article>
+            <article class="salon-card" data-city="beograd"><div class="salon-number">04</div><small>ZEMUN · MALOPRODAJA 4</small><h3>Cara Dušana 266/3</h3><p>Pon–pet 08:00–19:00<br>Subota 08:00–15:00</p><a href="tel:+381604314195">+381 60 431 41 95</a><a class="salon-mail" href="mailto:maloprodaja4@greenlaminati.rs">maloprodaja4@greenlaminati.rs</a></article>
+            <article class="salon-card" data-city="beograd"><div class="salon-number">05</div><small>IBARSKA MAGISTRALA · MALOPRODAJA 5</small><h3>Đuje i Dragoljuba 1</h3><p>Pon–pet 08:00–19:00<br>Subota 08:00–15:00</p><a href="tel:+381112340225">+381 11 23 40 225</a><a class="salon-mail" href="mailto:maloprodaja5@greenlaminati.rs">maloprodaja5@greenlaminati.rs</a></article>
+            <article class="salon-card" data-city="beograd"><div class="salon-number">06</div><small>BATAJNICA · MALOPRODAJA 8</small><h3>Pukovnika Milenka Pavlovića 104</h3><p>Pon–pet 08:00–18:00<br>Subota 08:00–15:00</p><a href="tel:+381604314100">+381 60 431 41 00</a><a class="salon-mail" href="mailto:maloprodaja6@greenlaminati.rs">maloprodaja6@greenlaminati.rs</a></article>
+            <article class="salon-card" data-city="nis"><div class="salon-number">07</div><small>NIŠ · MALOPRODAJA 6</small><h3>Milka Protić, Prva 17</h3><p>Pon–pet 08:00–19:00<br>Subota 08:00–15:00</p><a href="tel:+381183230222">+381 18 323 0222</a><a class="salon-mail" href="mailto:maloprodajanis@greenlaminati.rs">maloprodajanis@greenlaminati.rs</a></article>
+            <article class="salon-card" data-city="cacak"><div class="salon-number">08</div><small>ČAČAK · MALOPRODAJA 7</small><h3>Bulevar oslobodilaca Čačka 106</h3><p>Pon–pet 08:00–19:00<br>Subota 08:00–15:00</p><a href="tel:+381325459380">+381 32 545 9380</a><a class="salon-mail" href="mailto:maloprodajacacak@greenlaminati.rs">maloprodajacacak@greenlaminati.rs</a></article>
+            <article class="salon-card" data-city="kragujevac"><div class="salon-number">09</div><small>KRAGUJEVAC · MALOPRODAJA 10</small><h3>Ljubomira Jovanovića 2</h3><p>Pon–pet 08:00–19:00<br>Subota 08:00–15:00</p><a href="tel:+381604310008">+381 60 431 0008</a><a class="salon-mail" href="mailto:maloprodaja.kg@greenlaminati.rs">maloprodaja.kg@greenlaminati.rs</a></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="inquiry" id="upit">
+      <div class="inquiry-bg" aria-hidden="true"></div>
+      <div class="inquiry-copy" data-reveal><p class="eyebrow">VAŠ PROSTOR · VAŠ IZBOR</p><h2>Pošaljite nam ideju.<br><em>Mi ćemo pronaći dekor.</em></h2><p>Opišite prostor, kvadraturu i ton koji želite. Tim u salonu može da pripremi uži izbor dekora za vaš dolazak.</p></div>
+      <form class="inquiry-form" id="inquiryForm" data-reveal>
+        <label><span>Ime i prezime</span><input required placeholder="Vaše ime"></label>
+        <label><span>Telefon ili e-mail</span><input required placeholder="Kontakt podatak"></label>
+        <label><span>Šta tražite?</span><select><option>Laminat</option><option>Sobna vrata</option><option>Akustični paneli</option><option>Kompletno rešenje</option></select></label>
+        <label><span>Poruka</span><textarea rows="3" placeholder="Kvadratura, željeni ton, grad…"></textarea></label>
+        <button class="button button-solid" type="submit">Pošaljite upit <span class="icon icon-ne" aria-hidden="true"></span></button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><a class="brand" href="#top"><span>GREEN</span><b></b><strong>LAMINATI</strong></a><p>Podne obloge koje vašem prostoru daju novu vrednost.</p></div>
+    <div><small>PONUDA</small><a href="#katalog">Laminati</a><a href="#kolekcije">Sobna vrata</a><a href="#kolekcije">Akustični paneli</a></div>
+    <div><small>INFORMACIJE</small><a href="#saloni">Saloni</a><a href="#upit">Kontakt</a><a href="#pitanja">Česta pitanja</a></div>
+    <div class="footer-note"><small>STRUČAN SAVET</small><p>Pošaljite šifru dekora i kvadraturu prostora. Proverićemo dostupnost i pomoći pri izboru.</p></div>
+    <p class="copyright">© 2026 Green Laminati · Sva prava zadržana</p>
+  </footer>
+
+  <dialog class="product-dialog" id="productDialog">
+    <button class="dialog-close" aria-label="Zatvori"><span class="icon-close" aria-hidden="true"></span></button>
+    <img id="dialogImage" alt="">
+    <div><small id="dialogSpec"></small><h2 id="dialogTitle"></h2><p>Proverite dekor uživo u najbližem salonu i zatražite informaciju o trenutnoj dostupnosti.</p><strong id="dialogPrice"></strong><a class="button button-solid" href="#upit">Zatražite dostupnost</a></div>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
